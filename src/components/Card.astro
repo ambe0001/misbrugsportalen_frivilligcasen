@@ -1,0 +1,55 @@
+---
+import Button from "../components/Button.astro";
+---
+
+<article>
+ <div class="card">
+ <h1>Hvad skal du som frivillig?</h1>
+  <p>Vores frivillige tilbyder samtalestøtte til individer og familier berørt af misbrug som rådgivere på vores akuttelefon. Det kan være i individuelle telefoniske samtaleforløb og som terapeutiske gruppeledere i online gruppeforløb. <br><br>
+
+  Som frivillig i foreningen gennemgår du en grunding oplæring og en mentor, vil klæde dig på til at støtte pårørende gennem samtalestøtten. Arbejdet udføres hjemmefra og vi forventer, at du kan tage mindst to vagter om måneden.</p>
+
+
+     <Button text="Tilmeld infomøde" ></Button>
+       <img src="src/imgs/frivillig_img.webp" alt="">
+</div>
+
+</article>
+
+<style>
+    article {
+        padding: 50px;
+       
+    }
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+
+     border-radius: 5px;
+background-color: #F7E7D2;
+ margin: 50px;
+ padding: 50px;
+ 
+
+ }
+
+p {
+margin-bottom: 10px;
+ font-size: 20px;
+ max-width:600px ;
+}
+
+h1 {
+
+    font-size: 45px;
+}
+
+img {
+
+grid-column: 1;
+grid-row: 1/4;}
+
+
+</style>
