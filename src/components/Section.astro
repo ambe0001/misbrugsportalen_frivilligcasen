@@ -1,8 +1,188 @@
 ---
+
+
 const {backgroundColor } = Astro.props;
+
 ---
+
 
 <section style=`background-color:${backgroundColor};` >
 
-    <slot></slot>
+    <div>
+
+        <h2>Pårørende Netværket</h2>
+
+    <p>Misbrugsportalen - Pårørende Netværket søger løbende engagerede frivillige rådgivere, 
+        der gennem online og telefoniske samtaler støtter og hjælper mennesker med misbrugsrelaterede udfordringer enten som pårørende eller som én med eget misbrugsproblem.  
+        Er du vores næste kollega? Tilmeld dig vores infomøde </p>
+        <h4>BLIV EN DEL AF TEAMET HER!</h4>
+
+<h5>↓</h5>
+
+        </div>
+
+    <div>
+
+    <article>
+
+<h3>Meld dig til infomøde:</h3>
+
+<ul>
+    <li>Fulde navn</li>
+    <li>Fødselsdagsdato</li>
+    <li>Telefonnummer</li>
+    <li>@Email</li>
+    <li>By</li>
+    <li>Postnummer</li>
+</ul>
+
+<button>Send</button>
+
+    </article>
+
+</div>
+
 </section>
+
+<style>
+
+section{
+   background-color: #1F4242;
+   padding: 3rem; 
+}
+
+h2{
+    color: #E56F3F;
+    padding-bottom: 1rem;
+    font-size: 1.75rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+p{
+    color: #FCF7F0;
+    font-size: 1rem;
+    line-height: 30px;
+    padding-bottom: 3rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+h4{
+    text-align: center;
+    color:#FCF7F0;
+        font-size: 1.25rem;
+        padding-bottom: 0.75rem;
+}
+
+h5{
+    text-align: center;
+    color: #FCF7F0;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+article{
+    background-color: #E56F3F;
+    padding: 1.5rem;
+    border-radius: 5px;
+    max-width: 400px;
+    min-width: 400px;
+    margin: 0 auto;
+}
+
+h3{
+color: #FCF7F0;
+text-align: center;
+font-size: 1.5rem;
+padding-top: 1.75rem;
+}
+
+ul{
+
+    list-style: none;
+    padding: 1.5rem 2.5rem;
+}
+
+li{
+    margin-bottom: 1.25rem;
+    padding: 0.65rem;
+    color: #FCF7F0;
+    outline: solid 1px #FCF7F0;
+    border-radius: 20px;
+    font-weight: 500;
+    transition: 0.2s ease-out;
+    max-width: 400px;
+}
+
+li:hover{
+    color:#E56F3F;
+}
+
+button{
+background-color: #61C6BB;
+color: #FCF7F0;
+padding: 0.75rem 6rem;
+font-size: 1rem;
+border: none;
+border-radius: 20px;
+margin: 0px 0px 20px 65px;
+transition: 0.2s ease-out;
+}
+
+button:hover{
+    background-color: #fcf7f000;
+    color: #FCF7F0;
+    outline: 2px solid #61C6BB;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 800px) {
+    section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 75px;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+
+    h2{
+        font-size: 2.75rem;
+    }
+
+    h4{
+        font-size: 1.5rem;
+    }
+
+    p{
+        font-size: 1.35rem;
+        line-height: 40px;
+    }
+
+    article{
+        max-width: 600px;
+        min-width: 600px;
+    }
+
+    ul{
+        padding: 2rem 4rem;
+    }
+
+    button{
+        padding: 0.75rem 8rem;
+        margin: 0px 0px 40px 125px;
+    }
+}
+  
+</style>
+
+<script>
+
+</script>
+
+
+
+
+
