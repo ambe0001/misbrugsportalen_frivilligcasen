@@ -1,5 +1,6 @@
 ---
 
+import Button from "../components/Button.astro"
 
 const {backgroundColor } = Astro.props;
 
@@ -13,9 +14,10 @@ const {backgroundColor } = Astro.props;
         <h2>Pårørende Netværket</h2>
 
     <p>Misbrugsportalen - Pårørende Netværket søger løbende engagerede frivillige rådgivere, 
-        der gennem online og telefoniske samtaler støtter og hjælper mennesker med misbrugsrelaterede udfordringer enten som pårørende eller som én med eget misbrugsproblem.  
-        Er du vores næste kollega? Tilmeld dig vores infomøde </p>
-        <h4>BLIV EN DEL AF TEAMET HER!</h4>
+        der gennem online og telefoniske samtaler støtter og hjælper mennesker med misbrugsrelaterede udfordringer enten som pårørende eller som én med eget misbrugsproblem. 
+        Som frivillig rådgiver får du mulighed for at gøre en forskel i andres liv, være en støtte for dem, der går igennem svære perioder, 
+        og samtidig opbygge din egen kompetence indenfor rådgivning og støttearbejde. Er du vores næste kollega? 
+        Tilmeld dig vores infomøde og hør mere om, hvordan du kan blive en del af vores team.</p>
 
 <h5>↓</h5>
 
@@ -36,7 +38,7 @@ const {backgroundColor } = Astro.props;
     <li>Postnummer</li>
 </ul>
 
-<button>Send</button>
+<Button text="Send"></Button>
 
     </article>
 
@@ -53,9 +55,10 @@ section{
 
 h2{
     color: #E56F3F;
-    padding-bottom: 1rem;
-    font-size: 1.75rem;
+    padding-bottom: 2rem;
+    font-size: 2rem;
     font-weight: 600;
+    font-family: "poppins";
     text-align: center;
 }
 
@@ -63,16 +66,10 @@ p{
     color: #FCF7F0;
     font-size: 1rem;
     line-height: 30px;
-    padding-bottom: 3rem;
     max-width: 500px;
     margin: 0 auto;
-}
-
-h4{
-    text-align: center;
-    color:#FCF7F0;
-        font-size: 1.25rem;
-        padding-bottom: 0.75rem;
+    padding-bottom: 2rem;
+    font-family: "poppins", "serif";
 }
 
 h5{
@@ -86,22 +83,26 @@ article{
     background-color: #FCF7F0;
     padding: 1.5rem;
     border-radius: 5px;
-    max-width: 400px;
+    max-width: 500px;
     min-width: 400px;
     margin: 0 auto;
+    justify-content: center;
+    align-items: center;
 }
 
 h3{
 color: #000000;
 text-align: center;
-font-size: 1.5rem;
+font-size: 2rem;
 padding-top: 1.75rem;
 }
 
 ul{
-
+    display: flex;
+    flex-direction: column;
     list-style: none;
     padding: 1.5rem 2.5rem;
+    font-family: "poppins", "serif";
 }
 
 li{
@@ -109,32 +110,13 @@ li{
     padding: 0.65rem;
     color: #000000;
     outline: solid 2px #000000;
-    border-radius: 20px;
+    border-radius: 30px;
     font-weight: 500;
     transition: 0.2s ease-out;
-    max-width: 400px;
 }
 
 li:hover{
     color:#FCF7F0;
-}
-
-button{
-background-color: #61C6BB;
-color: #FCF7F0;
-padding: 0.75rem 6rem;
-font-size: 1rem;
-border: none;
-border-radius: 20px;
-margin: 0px 0px 20px 65px;
-transition: 0.2s ease-out;
-}
-
-button:hover{
-    background-color: #fcf7f000;
-    color: #61C6BB;
-    outline: 2px solid #61C6BB;
-    cursor: pointer;
 }
 
 @media screen and (min-width: 800px) {
@@ -144,21 +126,25 @@ button:hover{
         align-items: center;
         gap: 75px;
     }
+
+    h2{
+        text-align: left;
+    }
+
+h5{
+    display: none;
+}
+
 }
 
 @media screen and (min-width: 1100px) {
 
+      section{
+        gap: 125px;
+    }
+
     h2{
         font-size: 2.75rem;
-    }
-
-    h4{
-        font-size: 1.5rem;
-    }
-
-    p{
-        font-size: 1.35rem;
-        line-height: 40px;
     }
 
     article{
@@ -167,13 +153,13 @@ button:hover{
     }
 
     ul{
-        padding: 2rem 4rem;
+           padding: 2rem 3rem; 
     }
 
-    button{
-        padding: 0.75rem 8rem;
-        margin: 0px 0px 40px 125px;
-    }
+li{
+        margin-bottom: 1.75rem;
+}
+
 }
   
 </style>

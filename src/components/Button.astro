@@ -5,29 +5,32 @@ const { text } = Astro.props;
 <button>{text}</button>
 
 <style>
+
 button {
-      border: none;
+    display: flex;
+    border: none;
     outline: 0;
-    display: inline-block;
-    padding: 0.5rem;
+    margin: 0 auto;
+    padding: 0.5rem 3rem;
     text-align: center;
     cursor: pointer;
- border-radius: 18px;
+    border-radius: 25px;
     background-color: #61C6BB;
     color: #ffffff;
     font-family: "poppins", serif;
-    font-size: 0.7rem;
-    max-width: 130px;
-    max-height: 38px;
+    font-size: 1rem;
+    width: 300px;
+    height:50px;
+    justify-content: center;
+    align-items: center;
+    transition: 0.15s ease-in;
 }
 
 button:hover {
-
 background-color: #ffffff ;
-    color: #61C6BB;
-
-
+color: #61C6BB;
+outline: 2px solid #61C6BB;
+transform: scale(1.05);
 }
-
 
 </style>
