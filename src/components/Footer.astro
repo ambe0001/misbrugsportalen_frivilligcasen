@@ -7,7 +7,7 @@
                 <a href="#">
                     <img src="src/imgs/logo.webp" alt="logo">
                 </a>
-                <p>Åbningstider
+                <p class="aabningstider">Åbningstider
                     <br>
                     Mandag - Tirsdag
                     <br>
@@ -31,6 +31,7 @@
             </div>
         </div>
         <div>
+            <h2>KONTAKTINFORMATIONER</h2>
             <p>Bagsværd Hovedgade 126, 2880 Bagsværd
                 <br>
                 <br>
@@ -40,7 +41,10 @@
                 <br>
                 <br>
             </p>
-            <a href="#">Mail: mail@misbrugsportalen.dk</a>
+            <p>Mail:<a href="#"> mail@misbrugsportalen.dk
+                <br>
+                <br>
+            </a></p>
             <div class="kontakt_ikoner">
                 <a href="#"><i class="fa-solid fa-phone"></i></a>
                 <a href="#"><i class="fa-solid fa-envelope"></i></a>
@@ -72,9 +76,58 @@
 .kontakt_ikoner,
 .sociale_medier {
   display: flex;
-  justify-content: start;
-  max-width: 300px;
+  justify-content: center;
+  /* max-width: 300px; */
   gap: 20px;
 }
 
+a {
+    font-family: poppins;
+}
+
+.sociale_medier a:hover,
+.kontakt_ikoner a:hover {
+    scale: 1.2;
+    color: #61c6bb;
+    background-color: white;
+    border-style: solid;
+    border-color: #61c6bb;
+    transition: ease-in-out;
+    
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 200;
+    letter-spacing: 0px;
+    margin-top: 15px;
+}
+
+.aabningstider {
+    padding-block: 15px;
+}
+
+.sociale_medier a {
+    width: 80px;
+    
+}
+
+.sociale_medier {
+    gap: 10px;
+}
+
+.kontakt_ikoner a {
+    width: 100px;
+    
+}
+
+.kontakt_ikoner {
+    gap: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    h2 {
+        margin-top: 50px;
+    }
+}
        </style>
