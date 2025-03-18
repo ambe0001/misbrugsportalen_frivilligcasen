@@ -9,54 +9,39 @@ import Card from "../components/Card.astro";
 import Sections from "../components/Sections.astro";
 import Cards from "../components/Cards.astro";
 ---
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="da">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Misbrugsportalen Pårørende Netværket</title>
-     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" />
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+  </head>
 
-</head>
-
-<body>
-
- <Nav/>
-    <Header title="Bliv frivillig hos Misbrugsportalen">
-
-    </Header>
+  <body>
+    <Nav />
+    <Header title="Bliv frivillig hos Misbrugsportalen" />
 
     <Section backgroundColor="#1F4242">
-       <Sections></Sections>
+      <Sections />
     </Section>
 
-    <Section backgroundColor="#E56F3F" >
-  <Card>
-   
-  </Card>
+    <Section backgroundColor="#E56F3F">
+      <Card />
     </Section>
 
     <Section backgroundColor="#344358">
-    
-      <Cards title="Gør en forskel og styrk dit CV"  >
-
-      <Cards/>   
-       <Cards title="Gør en forskel og styrk dit CV"  >
-
-      <Cards/>   
-       <Cards title="Gør en forskel og styrk dit CV"  >
-
-      <Cards/>   
+      <Cards alt="billede af mand med sin bærbar" billede="cv_billede.webp" title="Gør en forskel og styrk dit CV" tekst="Du får et meningsfuldt og givende frivillig job, hvor du på nært hold følger den forandring, du bidrager til for den enkelte familie samtidig med, at du får mulighed for at udvikle dine empatiske og faglige færdigheder og et plus på CV'et." />
+      <Cards alt="billede af mand med sin bærbar" billede="hjemmefra_img.webp" reverse={true} title="Frivillig hjemmefra" tekst="Som frivillig rådgiver har du et fleksibelt skema, som du selv er med til at planlægge. Også uanset hvor i landet du bor, kan du være frivillig hos os – vores tilbud er landsdækkende, og al intern kommunikation foregår online. " />
+      <Cards alt="Dame taler i tlf" billede="fællesskab_img.webp" title="Stærkt fællesskab" tekst="Skab meningsfulde relationer og bliv en del af et engageret og fagligt stærkt fællesskab af frivillige fra hele landet. På trods af kommunikationen foregår online  ændrer det dog ikke på, at vi har et utroligt nærværende, levende og støttende fællesskab blandt vores kollegaer. Er du i tvivl om noget kan du altid søge råd hos kompetente og erfarne ledere og kollegaer.">
+        <Button text="Tilmeld infomøde" />
+      </Cards>
     </Section>
-
-    <Footer>
-
-    </Footer>
-
-</body>
-
+  </body>
+  <Footer />
 </html>
