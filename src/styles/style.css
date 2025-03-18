@@ -32,3 +32,13 @@ h2 {
 p {
   font-family: poppins;
 }
+
+footer {
+  margin: auto;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr; */
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  padding-inline: 100px;
+}
