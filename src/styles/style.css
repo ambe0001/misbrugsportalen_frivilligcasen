@@ -42,3 +42,10 @@ footer {
   padding: 50px;
   padding-inline: 100px;
 }
+
+@media screen and (max-width: 800px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+}
