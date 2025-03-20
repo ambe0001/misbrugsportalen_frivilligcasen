@@ -3,53 +3,98 @@ import Button from "../components/Button.astro";
 ---
 
 <article>
+
  <div class="card">
- <h1>Hvad skal du som frivillig?</h1>
-  <p>Vores frivillige tilbyder samtalestøtte til individer og familier berørt af misbrug som rådgivere på vores akuttelefon. Det kan være i individuelle telefoniske samtaleforløb og som terapeutiske gruppeledere i online gruppeforløb. <br><br>
+ 
+ <div class="text_content">  
 
-  Som frivillig i foreningen gennemgår du en grunding oplæring og en mentor, vil klæde dig på til at støtte pårørende gennem samtalestøtten. Arbejdet udføres hjemmefra og vi forventer, at du kan tage mindst to vagter om måneden.</p>
+<h1>Hvad skal du som frivillig?</h1>
+  <p>Vores frivillige tilbyder samtalestøtte til individer og familier berørt af misbrug som rådgivere på vores akuttelefon. 
+    Det kan være i individuelle telefoniske samtaleforløb og som terapeutiske gruppeledere i online gruppeforløb. <br><br>
+    Som frivillig i foreningen gennemgår du en grunding oplæring og en mentor, vil klæde dig på til at støtte pårørende gennem samtalestøtten. 
+    Arbejdet udføres hjemmefra og vi forventer, at du kan tage mindst to vagter om måneden.</p>
 
+    <Button text="Tilmeld infomøde"></Button>
 
-     <Button text="Tilmeld infomøde" ></Button>
+ </div> 
+
+  <div class="img_content">
        <img src="imgs/frivillig_img.webp" alt="">
+  </div>
+
 </div>
 
 </article>
 
 <style>
-    article {
-        padding: 50px;
-       
-    }
+    
+article {
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 45px;
+max-width: 700px;
+margin: 0 auto;
+}
 
 .card {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 20px;
-
-     border-radius: 5px;
-background-color: #F7E7D2;
- margin: 50px;
- padding: 50px;
- 
-
+ background-color: #F7E7D2;
+ border-radius: 5px;
+ padding: 35px 35px;
  }
 
-p {
-margin-bottom: 10px;
- font-size: 20px;
- max-width:600px ;
+ h1{
+ font-size: 2rem;
+ padding: 40px 0px;
+ text-align: center;
+ }
+
+ p{
+ font-size: 1rem;
+ padding-bottom: 40px; 
+ }
+
+ .img_content{
+ padding-top: 35px;
+ }
+
+ @media screen and (min-width: 1100px) {
+
+    article{
+  max-width: 1500px;
+  padding: 10rem 100px; 
+  height: 1000px;
 }
 
-h1 {
-
-    font-size: 45px;
+    .card {
+  display:flex;
+  gap:75px;
+  padding: 60px 60px;
+  justify-content: center;
+  align-items: center;
 }
 
-img {
+.img_content{
+    min-width: 375px;
+}
 
-grid-column: 1;
-grid-row: 1/4;}
+.text_content {
+    max-width: 600px;
+    order: 1;
+}
 
+  h1{
+        font-size: 2.25rem;
+    }
+
+    p{
+        font-size: 20px; 
+    }
+
+    .button{
+        display: block;
+    }
+
+ }
 
 </style>
