@@ -13,40 +13,79 @@ const { title, tekst, billede, alt, reverse = false } = Astro.props;
   </article>
 </div>
 <style>
-  .copy {
-    padding-top: 60px;
-  }
-  .card {
-    display: flex;
-    flex-direction: row;
-    gap: 95px;
-    padding-bottom: 50px;
-    padding-top: 70px;
+  img {
+    width: 100%;
+    border-radius: 8px;
   }
 
-  .reverse {
-    flex-direction: row-reverse;
+  .card {
+    padding-bottom: 50px;
+    padding-top: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   p {
-    margin-bottom: 10px;
-    margin-top: 15px;
-    font-size: 20px;
-    max-width: 600px;
+    font-size: 1rem;
     color: #fcf7f0;
-    line-height: 35px;
+    padding-bottom: 20px;
   }
-
   h3 {
-    font-size: 45px;
+    font-size: 2.25rem;
     color: #e56f3f;
+    padding-top: 10px;
+    padding-bottom: 7px;
   }
-
   .tekst {
     padding-top: 70px;
   }
+  .copy {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
 
-  img {
-    width: 50%;
+  @media screen and (min-width: 900px) {
+    .card {
+      display: flex;
+      flex-direction: row;
+      gap: 95px;
+    }
+
+    img {
+      width: 50%;
+      border-radius: 0px;
+    }
+
+    .copy {
+      padding-top: 60px;
+    }
+    .card {
+      padding-bottom: 50px;
+      padding-top: 70px;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+
+    .reverse {
+      flex-direction: row-reverse;
+    }
+
+    p {
+      margin-bottom: 10px;
+      margin-top: 15px;
+      font-size: 20px;
+      max-width: 600px;
+      color: #fcf7f0;
+      line-height: 35px;
+    }
+
+    h3 {
+      font-size: 45px;
+      color: #e56f3f;
+    }
+
+    .tekst {
+      padding-top: 70px;
+    }
   }
 </style>
