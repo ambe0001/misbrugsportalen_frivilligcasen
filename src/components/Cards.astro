@@ -4,7 +4,7 @@ const { title, tekst, billede, alt, reverse = false } = Astro.props;
 
 <div>
   <article class={reverse ? "reverse card" : "card"}>
-    <img src={`/src/imgs/${billede}`} alt={alt} />
+    <img src={`imgs/${billede}`} alt={alt} />
     <div class="copy">
       <h3>{title}</h3>
       <p>{tekst}</p>
